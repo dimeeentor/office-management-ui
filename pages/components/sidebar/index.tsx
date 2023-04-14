@@ -29,7 +29,7 @@ export default function Sidebar() {
     return (
         <aside className="h-screen w-72 bg-dark-blue p-6">
             <header className="flex items-center justify-start text-white">
-                <div className="mr-8 grid h-14 w-14 place-content-center rounded-full bg-white">
+                <div className="grid h-14 w-14 place-content-center rounded-full bg-white">
                     <Image
                         src={"/../public/images/sidebar/logo.png"}
                         height={26}
@@ -37,12 +37,15 @@ export default function Sidebar() {
                         alt={"logo_icon"}
                     />
                 </div>
-                <h2>Miicon Protocol</h2>
+                <h2 className="ml-6">Office Management</h2>
             </header>
             <main className="mt-2 flex flex-col gap-2">
                 {menuItems.map((item, index) => {
                     return (
-                        <div className="mt-1 flex cursor-pointer items-center rounded-2xl p-3 text-base font-medium tracking-[0.02rem] text-white duration-300 hover:bg-white hover:text-dark-blue [&>img]:hover:invert">
+                        <div
+                            key={item}
+                            className="mt-1 flex cursor-pointer items-center rounded-3xl p-3 text-base font-medium tracking-[0.02rem] text-white duration-300 hover:bg-white hover:text-dark-blue [&>img]:hover:invert"
+                        >
                             <Image
                                 src={`/../public/images/sidebar/${menuItemsIcons[index]}.png`}
                                 alt={`${menuItemsIcons[index]}_icon`}

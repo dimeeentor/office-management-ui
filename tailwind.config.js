@@ -13,6 +13,9 @@ module.exports = {
                 white: "#F0F2F5",
                 green: "#4CAF50",
             },
+            flex: {
+                "1-custom": "1",
+            },
         },
     },
     plugins: [],
