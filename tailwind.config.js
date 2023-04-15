@@ -7,12 +7,6 @@ module.exports = {
     ],
     theme: {
         extend: {
-            colors: {
-                blue: "#D3E7F0",
-                "dark-blue": "#034F75",
-                white: "#F0F2F5",
-                green: "#4CAF50",
-            },
             flex: {
                 "1-custom": "1",
             },

@@ -1,6 +1,7 @@
 import Image from "next/image"
+import { FC } from "react"
 
-export default function Sidebar() {
+const Sidebar: FC = () => {
     const menuItems = [
         "Dashboard",
         "Department",
@@ -27,7 +28,7 @@ export default function Sidebar() {
     ]
 
     return (
-        <aside className="h-screen w-72 bg-dark-blue p-6">
+        <aside className="sticky top-0 h-screen w-72 bg-blue-600 p-6">
             <header className="flex items-center justify-start text-white">
                 <div className="grid h-14 w-14 place-content-center rounded-full bg-white">
                     <Image
@@ -44,7 +45,7 @@ export default function Sidebar() {
                     return (
                         <div
                             key={item}
-                            className="mt-1 flex cursor-pointer items-center rounded-3xl p-3 text-base font-medium tracking-[0.02rem] text-white duration-300 hover:bg-white hover:text-dark-blue [&>img]:hover:invert"
+                            className="hover:text-dark-blue mt-1 flex cursor-pointer items-center rounded-3xl p-3 text-base font-medium tracking-[0.02rem] text-white duration-300 hover:bg-white hover:text-slate-700 [&>img]:hover:invert"
                         >
                             <Image
                                 src={`/../public/images/sidebar/${menuItemsIcons[index]}.png`}
@@ -61,3 +62,5 @@ export default function Sidebar() {
         </aside>
     )
 }
+
+export default Sidebar
