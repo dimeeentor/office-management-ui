@@ -7,8 +7,8 @@ module.exports = {
     ],
     theme: {
         extend: {
-            flex: {
-                "1-custom": "1",
+            gridTemplateColumns: {
+                sidebar: "grid-template-columns: 18rem 1fr 1fr",
             },
         },
     },

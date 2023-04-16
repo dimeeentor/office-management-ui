@@ -28,7 +28,7 @@ const Sidebar: FC = () => {
     ]
 
     return (
-        <aside className="sticky top-0 h-screen w-72 bg-blue-600 p-6">
+        <aside className="sticky top-0 h-screen w-72 overflow-y-scroll bg-blue-600 p-6">
             <header className="flex items-center justify-start text-white">
                 <div className="grid h-14 w-14 place-content-center rounded-full bg-white">
                     <Image
@@ -52,7 +52,7 @@ const Sidebar: FC = () => {
                                 alt={`${menuItemsIcons[index]}_icon`}
                                 height={20}
                                 width={20}
-                                className="mr-4"
+                                className="mr-4 h-auto w-auto"
                             />
                             <span>{item}</span>
                         </div>

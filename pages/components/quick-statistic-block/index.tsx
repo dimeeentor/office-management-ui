@@ -25,7 +25,7 @@ const QuickStatisticBlock: FC<QuickStatisticBlock> = ({
             <div className="flex justify-between">
                 <div className="relative -top-6 left-6 h-12 w-12 rounded-full bg-blue-900"></div>
                 <div className="grow pr-5 pt-3 text-right">
-                    <p className="text-blue-500">{title}</p>
+                    <h2 className="text-blue-500">{title}</h2>
                     <p className="text-2xl font-medium text-blue-700">
                         {statistic.toString()}
                     </p>

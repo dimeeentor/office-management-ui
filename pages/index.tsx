@@ -2,16 +2,17 @@ import { Inter } from "next/font/google"
 import Sidebar from "./components/sidebar"
 import Header from "./components/header"
 import QuickStatisticBlock from "./components/quick-statistic-block"
+import DetailStatisticBlock from "./components/detail-statistic-block"
 
 const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
     return (
-        <main className="flex">
+        <main className="grid-cols-sidebar grid">
             <Sidebar />
-            <main className="w-full flex-1-custom p-5">
+            <section className="col-start-2 col-end-4 grid auto-rows-max p-5">
                 <Header />
-                <div className="mt-12 flex justify-evenly gap-5">
+                <section className="mt-12 flex gap-5">
                     <QuickStatisticBlock
                         title="Active Employee"
                         statistic={1081}
@@ -36,8 +37,52 @@ export default function Home() {
                         percentage={0}
                         timePeriod={"Just updated"}
                     />
-                </div>
-            </main>
+                </section>
+                <section className="w-full overflow-x-scroll rounded-2xl">
+                    <div className="mt-12 flex w-fit gap-5">
+                        <DetailStatisticBlock
+                            title={"Engineering and Development"}
+                            statistic={"Total Employee: 245"}
+                            timePeriod={"2 days"}
+                        />
+                        <DetailStatisticBlock
+                            title={"Marketing and Sales"}
+                            statistic={"Total Employee: 245"}
+                            timePeriod={"5 days"}
+                        />
+                        <DetailStatisticBlock
+                            title={"Accounting and Finance"}
+                            statistic={"Total Employee: 245"}
+                            timePeriod={"day"}
+                        />
+                        <DetailStatisticBlock
+                            title={"Human Resources"}
+                            statistic={"Total Employee: 245"}
+                            timePeriod={"6 days"}
+                        />
+                        <DetailStatisticBlock
+                            title={"Engineering and Development"}
+                            statistic={"Total Employee: 245"}
+                            timePeriod={"2 days"}
+                        />
+                        <DetailStatisticBlock
+                            title={"Marketing and Sales"}
+                            statistic={"Total Employee: 245"}
+                            timePeriod={"5 days"}
+                        />
+                        <DetailStatisticBlock
+                            title={"Accounting and Finance"}
+                            statistic={"Total Employee: 245"}
+                            timePeriod={"day"}
+                        />
+                        <DetailStatisticBlock
+                            title={"Human Resources"}
+                            statistic={"Total Employee: 245"}
+                            timePeriod={"6 days"}
+                        />
+                    </div>
+                </section>
+            </section>
         </main>
     )
 }
