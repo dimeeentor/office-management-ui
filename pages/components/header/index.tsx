@@ -2,7 +2,7 @@ import { FC } from "react"
 
 const Header: FC = () => {
     return (
-        <header className="sticky top-5 flex h-16 place-content-end items-center rounded-2xl bg-white shadow-sm">
+        <header className="sticky top-5 z-10 flex h-16 place-content-end items-center rounded-2xl bg-white shadow-sm">
             <input
                 className="mr-24 w-60 rounded-full bg-blue-600 px-4 py-2 text-white shadow-sm placeholder:text-white focus:outline-0"
                 type="text"

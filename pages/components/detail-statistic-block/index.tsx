@@ -12,7 +12,7 @@ const DetailStatisticBlock: FC<DetailStatisticBlock> = ({
     statistic,
     timePeriod,
 }) => (
-    <div className="grid h-64 w-64 grid-rows-1 rounded-2xl bg-white p-5 shadow">
+    <div className="grid h-64 w-64 rounded-2xl bg-white p-5 shadow">
         <Image
             src={"/../public/images/detail-statistic-block/engineering.png"}
             alt="engineering_icon"
