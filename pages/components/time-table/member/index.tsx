@@ -38,7 +38,7 @@ const Member: FC<TimeTable> = ({
     return (
         <div className="grid grid-cols-8 gap-10 pt-5">
             <div className="col-start-1 col-end-3 flex items-center">
-                <div className="h-10 w-10 rounded-full bg-blue-500 shadow"></div>
+                <div className="aspect-square h-10 w-10 rounded-full bg-blue-500 shadow"></div>
                 <div className="ml-3">
                     <h2>{fullName}</h2>
                     <p className="text-sm text-blue-800">{position}</p>
