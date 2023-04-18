@@ -28,9 +28,9 @@ const Sidebar: FC = () => {
     ]
 
     return (
-        <aside className="sticky top-0 h-screen w-72 overflow-y-scroll bg-blue-600 p-6">
+        <aside className="sticky top-0 grid h-screen overflow-y-scroll bg-blue-500 duration-300 md:block md:w-72 md:p-6">
             <header className="flex items-center justify-start text-white">
-                <div className="grid h-14 w-14 place-content-center rounded-full bg-white">
+                <div className="hidden h-14 w-14 place-content-center rounded-full bg-white md:grid">
                     <Image
                         src={"/../public/images/sidebar/logo.png"}
                         height={26}
@@ -38,23 +38,23 @@ const Sidebar: FC = () => {
                         alt={"logo_icon"}
                     />
                 </div>
-                <h2 className="ml-6">Office Management</h2>
+                <h2 className="ml-6 hidden md:block">Office Management</h2>
             </header>
             <main className="mt-2 flex flex-col gap-2">
                 {menuItems.map((item, index) => {
                     return (
                         <div
                             key={item}
-                            className="hover:text-dark-blue mt-1 flex cursor-pointer items-center rounded-3xl p-3 text-base font-medium tracking-[0.02rem] text-white duration-300 hover:bg-white hover:text-slate-700 [&>img]:hover:invert"
+                            className="hover:text-dark-blue flex cursor-pointer items-center rounded-3xl p-3 text-base font-medium tracking-[0.02rem] text-white duration-300 hover:bg-white hover:text-slate-700 [&>img]:invert [&>img]:hover:invert-0"
                         >
                             <Image
-                                src={`/../public/images/sidebar/${menuItemsIcons[index]}.png`}
+                                src={`/images/sidebar/${menuItemsIcons[index]}.png?v=1`}
                                 alt={`${menuItemsIcons[index]}_icon`}
                                 height={20}
                                 width={20}
-                                className="mr-4 h-auto w-auto"
+                                className="aspect-auto h-5 w-5"
                             />
-                            <span>{item}</span>
+                            <span className="hidden pl-4 md:block">{item}</span>
                         </div>
                     )
                 })}
