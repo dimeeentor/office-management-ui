@@ -5,3 +5,7 @@
 body {
     @apply bg-blue-100
 }
+
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+}
