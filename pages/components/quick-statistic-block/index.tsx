@@ -23,7 +23,7 @@ const QuickStatisticBlock: FC<QuickStatisticBlock> = ({
     return (
         <div className="flex h-32 w-full flex-col rounded-2xl bg-white shadow">
             <div className="flex justify-between">
-                <div className="relative -top-6 left-6 h-12 w-12 rounded-full bg-blue-900"></div>
+                <div className="ml-3 mt-3 h-10 w-10 rounded-full bg-blue-900"></div>
                 <div className="grow pr-5 pt-3 text-right">
                     <h2 className="text-blue-500">{title}</h2>
                     <p className="text-2xl font-medium text-blue-700">
