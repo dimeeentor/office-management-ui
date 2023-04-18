@@ -12,9 +12,9 @@ export default function Home() {
     return (
         <main className="grid">
             <Sidebar />
-            <section className="col-start-2 col-end-4 grid gap-12 p-5">
+            <section className="col-start-2 col-end-3 grid gap-12 p-5">
                 <Header />
-                <section className="flex gap-5">
+                <section className="grid gap-10 md:grid-cols-2 md:gap-5 lg:grid-cols-4">
                     <QuickStatisticBlock
                         title="Active Employee"
                         statistic={1081}
@@ -40,47 +40,55 @@ export default function Home() {
                         timePeriod={"Just updated"}
                     />
                 </section>
-                <section className="h-fit w-full overflow-x-scroll rounded-2xl">
+                <section className="scrollbar-hide h-fit overflow-x-scroll rounded-2xl">
                     <div className="flex w-fit gap-5">
                         <DetailStatisticBlock
                             title={"Engineering and Development"}
                             statistic={"Total Employee: 245"}
                             timePeriod={"2 days"}
+                            imageSrcName={"engineering"}
                         />
                         <DetailStatisticBlock
                             title={"Marketing and Sales"}
                             statistic={"Total Employee: 245"}
                             timePeriod={"5 days"}
+                            imageSrcName={"marketing"}
                         />
                         <DetailStatisticBlock
                             title={"Accounting and Finance"}
                             statistic={"Total Employee: 245"}
                             timePeriod={"day"}
+                            imageSrcName={"wallet"}
                         />
                         <DetailStatisticBlock
                             title={"Human Resources"}
                             statistic={"Total Employee: 245"}
                             timePeriod={"6 days"}
+                            imageSrcName={"hr"}
                         />
                         <DetailStatisticBlock
                             title={"Engineering and Development"}
                             statistic={"Total Employee: 245"}
                             timePeriod={"2 days"}
+                            imageSrcName={"engineering"}
                         />
                         <DetailStatisticBlock
                             title={"Marketing and Sales"}
                             statistic={"Total Employee: 245"}
                             timePeriod={"5 days"}
+                            imageSrcName={"marketing"}
                         />
                         <DetailStatisticBlock
                             title={"Accounting and Finance"}
                             statistic={"Total Employee: 245"}
                             timePeriod={"day"}
+                            imageSrcName={"wallet"}
                         />
                         <DetailStatisticBlock
                             title={"Human Resources"}
                             statistic={"Total Employee: 245"}
                             timePeriod={"6 days"}
+                            imageSrcName={"hr"}
                         />
                     </div>
                 </section>

@@ -1,18 +1,19 @@
 import { FC } from "react"
+import Image from "next/image"
 
 const Header: FC = () => {
     return (
-        <header className="sticky top-5 z-10 flex h-16 place-content-end items-center rounded-2xl bg-white shadow-sm">
-            <input
-                className="mr-24 w-60 rounded-full bg-blue-600 px-4 py-2 text-white shadow-sm placeholder:text-white focus:outline-0"
-                type="text"
-                placeholder="Search here..."
-            />
-            <div className="flex items-center justify-self-end">
-                <span className="text-dark-blue/50 pl-6 pr-2">
+        <header className="flex h-16 grid-cols-1 justify-center rounded-2xl bg-white shadow-sm md:grid md:place-items-end">
+            <div className="flex h-full items-center justify-self-end">
+                <input
+                    className="rounded-full bg-blue-500 px-4 py-2 text-white shadow-sm placeholder:text-white focus:outline-0 md:mr-10"
+                    type="text"
+                    placeholder="Search here..."
+                />
+                <span className="text-dark-blue/50 pl-6 pr-2 text-sm md:text-base">
                     Honcharenko Dmytro
                 </span>
-                <div className="bg-blue mr-4 h-10 w-10 rounded-full shadow"></div>
+                <div className="mr-4 aspect-square h-10 w-10 rounded-full bg-blue-500 shadow"></div>
             </div>
         </header>
     )
