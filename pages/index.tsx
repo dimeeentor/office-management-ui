@@ -10,9 +10,9 @@ const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
     return (
-        <main className="grid">
+        <main className="m-auto grid max-w-7xl">
             <Sidebar />
-            <section className="col-start-2 col-end-3 grid gap-12 p-5">
+            <section className="col-start-2 col-end-3 grid place-content-baseline gap-12 p-5">
                 <Header />
                 <section className="grid gap-10 md:grid-cols-2 md:gap-5 lg:grid-cols-4">
                     <QuickStatisticBlock

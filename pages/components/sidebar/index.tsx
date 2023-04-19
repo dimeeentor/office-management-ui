@@ -28,19 +28,19 @@ const Sidebar: FC = () => {
     ]
 
     return (
-        <aside className="sticky top-0 grid h-screen overflow-y-scroll bg-blue-500 duration-300 md:block md:w-72 md:p-6">
-            <header className="flex items-center justify-start text-white">
-                <div className="hidden h-14 w-14 place-content-center rounded-full bg-white md:grid">
-                    <Image
-                        src={"/../public/images/sidebar/logo.png"}
-                        height={26}
-                        width={26}
-                        alt={"logo_icon"}
-                    />
-                </div>
-                <h2 className="ml-6 hidden md:block">Office Management</h2>
-            </header>
+        <aside className="w-15 sticky top-0 grid h-screen overflow-y-scroll bg-blue-500 md:w-72 md:p-6">
             <main className="mt-2 flex flex-col gap-2">
+                <header className="flex items-center justify-start text-white">
+                    <div className="hidden h-14 w-14 place-content-center rounded-full bg-white md:grid">
+                        <Image
+                            src={"/../public/images/sidebar/logo.png"}
+                            height={26}
+                            width={26}
+                            alt={"logo_icon"}
+                        />
+                    </div>
+                    <h2 className="ml-6 hidden md:block">Office Management</h2>
+                </header>
                 {menuItems.map((item, index) => {
                     return (
                         <div
